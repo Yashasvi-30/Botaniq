@@ -1,0 +1,307 @@
+/* 🌿 General Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background-color: #ebebeb;
+    color: #2e3d29;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* 🌙 Dark Mode */
+  body.dark-mode {
+    background-color: #1b262c;
+    color: #d1f2c9;
+  }
+  
+  /* 🍃 Full-Screen Fix (Content Padding Added) */
+  .container {
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1200px; /* Keeps content centered */
+    padding: 20px; /* Adds space around content */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  
+  /* 🌄 Hero Section (Full Width, No Padding) */
+  .hero {
+    background: linear-gradient(to right, #688a68, #a6d8a6);
+    width: 100vw; /* Full screen width */
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin-top: -60px;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .dark-mode .hero {
+    background: linear-gradient(to right, #658a65, #1d361d);
+  }
+  
+  .hero h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  /* 🌙 Dark Mode Button */
+  .dark-mode-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .dark-mode .dark-mode-btn {
+    background: #ddd;
+    color: #333;
+  }
+  
+  .dark-mode-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* 🔎 Search Bar */
+  .search-bar {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 500px;
+    margin: 15px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .search-bar:hover {
+    transform: scale(1.05);
+  }
+  
+  .search-icon {
+    margin-left: 10px;
+    color: gray;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: transparent;
+  }
+  
+  /* 🌱 Navigation (Full Width, No Padding) */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    max-width: 100%;
+    background: linear-gradient(to right, #cfe9cf, #a6d8a6);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-top: 2px solid #ccc;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .dark-mode .bottom-nav {
+    background: linear-gradient(to right, #2b4f2b, #1d361d);
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: #2e3d29;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .dark-mode .nav-item {
+    color: white;
+  }
+  
+  .nav-item:hover {
+    transform: scale(1.2);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
+  /* 🏡 My Garden Section */
+  .my-garden {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .garden-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .garden-item {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .dark-mode .garden-item {
+    background: #2e3d29;
+  }
+  
+  .garden-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .garden-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .plant-name {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .plant-status {
+    font-size: 12px;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  /* 📊 Stats Section */
+  .stats {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .stat-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .dark-mode .stat-card {
+    background: #2e3d29;
+    color: white;
+  }
+  
+  .stat-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .stat-icon {
+    font-size: 22px;
+    color: green;
+  }
+  
+  .dark-mode .stat-icon {
+    color: lightgreen;
+  }
+  
+  /* 📞 Chat Button */
+  .chat-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .chat-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  /* 📌 Footer (Full Width, No Padding) */
+  .footer {
+    background: #9cc69b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    font-size: 14px;
+  }
+  
+  .dark-mode .footer {
+    background: #2b4f2b;
+  }
+  
+  .footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 🎥 Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 24px;
+    }
+  
+    .search-bar {
+      width: 90%;
+    }
+  }
+  

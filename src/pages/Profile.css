@@ -1,0 +1,98 @@
+/* 🌿 General Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf9ec;
+    color: #2e3d29;
+    text-align: center;
+  }
+  
+  /* 🌙 Dark Mode */
+  body.dark-mode {
+    background-color: #1b262c;
+    color: #d1f2c9;
+  }
+  
+  /* 👤 Profile Card */
+  .profile-card {
+    background: linear-gradient(to right, #799f79, #a6d8a6);
+    padding: 20px;
+    color: white;
+  }
+  
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  /* 🏆 Achievements */
+  .achievement-badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .badge {
+    background: #d8f3dc;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+  
+  /* 📊 Garden Stats */
+  .stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .stat-card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 📅 Upcoming Tasks */
+  .tasks ul, .saved-guides ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tasks li, .saved-guides li {
+    background: #d8f3dc;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 8px;
+  }
+  
+  /* 📈 Weekly Insights */
+  .chart {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+  }
+  
+  .bar {
+    width: 20px;
+    background: #28a745;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+  }
+  
+  /* 📌 Navigation */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #a6d8a6;
+    padding: 10px;
+  }
+  
